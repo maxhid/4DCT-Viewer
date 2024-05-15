@@ -13,7 +13,7 @@ Welcome to the 4DCT Viewer, an alpha version MATLAB tool designed to visualize 4
 - **Measurement Add-On**[Alpha]: An add-on is included for performing various measurements, such as setting a circular region of interest (ROI), line profile analysis, and distance measurement.
 
 ### Usage
-1. Run the MATLAB script.
+1. Run the main.m script.
 2. Select the folder containing the n-3D CT scans.
 3. Adjust windowing settings and choose the desired orientation view.
 4. Navigate through the phases using the space bar.

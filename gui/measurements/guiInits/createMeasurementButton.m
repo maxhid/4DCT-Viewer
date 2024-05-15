@@ -1,0 +1,6 @@
+function measurement_btn = createMeasurementButton(parentNode, pos_x, pos_y, callbackFcn)
+%CREATEFOLDERSELECTION Summary of this function goes here
+measurement_btn = uicontrol('Parent', parentNode, 'Style', 'pushbutton', ...
+            'String', 'Measurements', 'Position', [pos_x, pos_y, 140, 30], ...
+            'Callback', callbackFcn);
+end

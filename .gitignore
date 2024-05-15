@@ -1,0 +1,11 @@
+Logs and Databases
+########################
+*.json
+*.log
+*.sql
+*.sqllite
+
+
+Matlab Files
+#######################
+*.m~

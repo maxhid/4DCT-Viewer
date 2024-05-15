@@ -1,0 +1,6 @@
+function select_Folder = createFolderSelection(parentNode, pos_x, pos_y, callbackFcn)
+%CREATEFOLDERSELECTION Summary of this function goes here
+select_Folder = uicontrol('Parent', parentNode, 'Style', 'pushbutton', ...
+            'String', 'Select Folder', 'Position', [pos_x, pos_y, 110, 30], ...
+            'Callback', callbackFcn);
+end

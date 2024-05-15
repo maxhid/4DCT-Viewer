@@ -1,6 +1,6 @@
 ## 4DCT Viewer
 
-Welcome to the 4DCT Viewer, an alpha version MATLAB tool designed to visualize 4D Computed Tomography (4DCT) data. This tool provides functionality for viewing multiple phases of 3D CT scans in different orientations and allows for easy navigation through the phases.
+Welcome to the 4DCT Viewer, an alpha version MATLAB gui-tool designed to visualize 4D Computed Tomography (4DCT) data. This tool provides functionality for viewing multiple phases of 3D CT scans in different orientations and allows for easy navigation through the phases.
 
 ### Features
 - **Folder Selection**: Choose a folder containing the n-phases 3D CT scans.

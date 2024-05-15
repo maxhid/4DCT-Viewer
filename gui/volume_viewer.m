@@ -231,7 +231,9 @@ function volume_viewer()
             series_description = infos{current_volume}.SeriesDescription;
             series_description = replace(series_description, '_', ' ');
             series_description = extractAfter(series_description, 'S3');
-            title(axViewer, sprintf('Phase: %s, Slice: %d', series_description, current_slice));
+            ww = (window(2) - window(1));
+            wc = window(1) + ww / 2;
+            title(axViewer, sprintf('Phase: %s, Slice: %d, Window: [C: %d, W: %d]', series_description, current_slice, wc, ww));
             
             % Check if segmentation toggle is activated
             if segmentation_radio.Value == 1 && ~isempty(volumes_nifti)

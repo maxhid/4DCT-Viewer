@@ -166,6 +166,7 @@ function volume_viewer()
     function change_windowingClicked(src, ~)
         window = change_windowing(windowing_popup);
         caxis(axViewer, window);
+        display_slice();
         setFocusToFigure(viewer, src);
     end
 

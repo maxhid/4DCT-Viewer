@@ -23,5 +23,5 @@ function window = change_windowing(windowing_popup)
     windowing_options =  {'standard', 'full dynamic', 'abdomen', 'angio', 'bone', 'brain', 'chest', 'lung'};
     selected_option = windowing_options{get(windowing_popup, 'Value')};
     window = setWindow(selected_option);
-    disp(['Windowing setting changed to: ', selected_option]);
+%     disp(['Windowing setting changed to: ', selected_option]);
 end

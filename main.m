@@ -7,7 +7,6 @@ addpath 'gui/helperfunctions'
 addpath 'gui/helperfunctions/guiInit'
 addpath 'gui/measurements'
 addpath 'gui/measurements/guiInits'
-addpath 'studyData'
 
 
 %% open file

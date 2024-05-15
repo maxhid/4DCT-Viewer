@@ -12,8 +12,8 @@ function metaData = createMetaData(exam_info)
     % metaData = createMetaData(exam_info);
     
     % Check if the directory for metadata exists, if not, create it
-    if ~exist('/home/heidermn/Documents/4DViewer/resultsData', 'dir')
-        mkdir('metadata');
+    if ~exist('/4DViewer/studyData/', 'dir')
+        mkdir('studyData');
     end
     
     field_names = fieldnames(exam_info);
@@ -21,7 +21,7 @@ function metaData = createMetaData(exam_info)
 
     
     % Check if a file for the examiner ID already exists
-    filename = sprintf('metadata/rater_%s.json', exam_info1.id);
+    filename = sprintf('studyData/rater_%s.json', exam_info1.id);
     if exist(filename, 'file')
         % Load existing metadata
         fid = fopen(filename, 'r');

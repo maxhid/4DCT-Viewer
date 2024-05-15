@@ -8,7 +8,7 @@ function studyData = readJson()
     % Usage:
     % studyData = readJson();
     
-    fid = fopen('/home/heidermn/Documents/4DViewer/studyData/startup.json', 'r');
+    fid = fopen('/studyData/startup.json', 'r');
     jsonData = fread(fid, '*char')';
     fclose(fid);
 

@@ -21,14 +21,14 @@ subfolders = subfolders([subfolders.isdir]); % Keep only directories
 %         phasefolders = cell(1, numel(1, 10));
 
 count = 0;
-phasefolders = repmat(subfolders(1), 1, 10);
+%phasefolders = repmat(subfolders(1), 1, 10);
 for i = 1:numel(subfolders)
    if contains(subfolders(i).name, '_Atmungsbewegung') && contains(subfolders(i).name, '_3.00')
        if contains(subfolders(i).name, 't-MaxIP')
            continue;
        end
        count = count + 1;
-       phasefolders(count) = subfolders(i);
+       phasefolders(count) = subfolders(i); %#ok<AGROW>
    end
 end
 
